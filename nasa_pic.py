@@ -33,7 +33,7 @@ def download_pic():
         print(r.text)
         return
 
-    picture_url = r.json()['hdurl']
+    picture_url = r.json()['url']
     if "jpg" not in picture_url:
         print("No image for today, must be a video")
     else:
